@@ -1,0 +1,103 @@
+/* 文章页的效果 */
+
+.hank-align-right {
+    margin-left: 1rem;
+    float: right;
+}
+
+.hank-align-left {
+    margin-left: 1rem;
+    float: left;
+}
+
+/* 段落 */
+div.hank-articleContent>p {
+    /* 字体 */
+    font-family: Monaco,
+        Menlo,
+        Consolas,
+        "Courier New",
+        "FontAwesome",
+        monospace;
+    /* 图居于段落右边
+    margin-left: 1rem;
+    float: right; */
+}
+
+div.hank-articleContent>p {
+    /* 字体 */
+    font-family: Monaco,
+        Menlo,
+        Consolas,
+        "Courier New",
+        "FontAwesome",
+        monospace;
+    /* 图居于段落右边
+    margin-left: 1rem;
+    float: right; */
+}
+
+/* 代码块 */
+div.hank-articleContent>pre {
+    max-height: 24rem;
+    overflow-y: scroll;
+}
+
+/* 图片 有边框  */
+div.hank-articleContent img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 2px;
+    line-height: 1.6;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+div.hank-articleContent>table {
+    width: 100%;
+    margin-bottom: 1.6rem;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+div.hank-articleContent>table>thead>tr>th,
+div.hank-articleContent>table>tbody>tr>th,
+div.hank-articleContent>table>tfoot>tr>th,
+div.hank-articleContent>table>thead>tr>td,
+div.hank-articleContent>table>tbody>tr>td,
+div.hank-articleContent>table>tfoot>tr>td {
+    padding: 0.7rem;
+    line-height: 1.6;
+    vertical-align: top;
+    border-top: 1px solid #cccccc;
+}
+
+div.hank-articleContent>table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #ddd;
+}
+
+div.hank-articleContent>table>tbody+tbody tr:first-child td {
+    border-top: 2px solid #ddd;
+}
+
+/* div.hank-articleContent>table>td,
+div.hank-articleContent>table>th {
+background-color: #fff !important;
+} */
+
+/* Zebra-striping */
+div.hank-articleContent>tbody>tr:nth-child(odd)>td,
+div.hank-articleContent>tbody>tr:nth-child(odd)>th {
+    background-color: #f9f9f9;
+}
+
+/* Hover effect */
+div.hank-articleContent>tbody>tr:hover>td,
+div.hank-articleContent>tbody>tr:hover>th {
+    background-color: #e9e9e9;
+}
